@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(97, 97, 156);
+}
+
+h1 {
+    text-align: center;}
+
+.formulario_carga {
+    margin: 15px 15px;
+    padding: 15px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 5px;
+    color: white;
+}
+.formulario_carga input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn {
+    width:150px !important ;
+    margin-top: 10px;
+}
+
+.div_productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 15px;
+    padding: 5px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 5px;
+}
+.div_articulo {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.div_articulo p {
+    padding: 3px;
+}
+.div_articulo input {
+    width: 100%;
+}
