@@ -1,6 +1,6 @@
 //Segunda Entrge Proyecto Final
 
-//Creamos un clas para la generacion de objetos
+//Class para la generacion de objetos
 class Articulo {
     constructor (producto, precio, stock) {
         this.producto = producto;
@@ -9,22 +9,21 @@ class Articulo {
     }
 }
 
-//Declaracion de base de datos
-let base_datos = [];
+let baseDatos = [];
 
 //Consulta y creacion de localStorage
 if(localStorage.getItem('base_datos_articulos')){
-    base_datos = JSON.parse(localStorage.getItem('base_datos_articulos'))
+    baseDatos = JSON.parse(localStorage.getItem('base_datos_articulos'))
 }
 else {
-    localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
+    localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
 }
 
-//Declaracion de constantes y llamado a nodos del html
+//constantes y llamado a nodos 
 const boton = document.getElementById('formulario_carga')
 const div_producto = document.getElementById('productos')
 
-//Accion del formulario
+//Formulario
 boton.addEventListener ('submit', (e) => {  
     
     e.preventDefault()      
@@ -35,15 +34,15 @@ boton.addEventListener ('submit', (e) => {
 
     const producto1 = new Articulo (nombre_art, precio_art, stock_art);
 
-    base_datos.push(producto1)
+    baseDatos.push(producto1)
 
-    localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
+    localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
 
     div_producto.innerHTML = " "
 
     formulario_carga.reset()
 
-    base_datos.forEach((producto,indice) => {
+    baseDatos.forEach((producto,indice) => {
         div_producto.innerHTML +=   `<div class="div_articulo" id="producto${indice}">
                                         <h2>${producto.producto}</h2>
                                         <p>${producto.precio}</p>
@@ -52,15 +51,14 @@ boton.addEventListener ('submit', (e) => {
                                     </div>`
     })
 
-    base_datos.forEach((producto, indice) => {
+    baseDatos.forEach((producto, indice) => {
             document.getElementById(`producto${indice}`).lastElementChild.addEventListener('click', () => {
             document.getElementById(`producto${indice}`).remove()
-            base_datos.splice(indice, 1)
-            localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
+            baseDatos.splice(indice, 1)
+            localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
             alert(`${producto.producto} eliminado`)
         })
     })
 })
 
-//--------------------------------------------------------------------------------------------------------------
 
