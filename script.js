@@ -1,6 +1,6 @@
-//Segunda Entrge Proyecto Final
+//Desafio Incorporar Librerias
 
-//Class para la generacion de objetos
+//Creamos un clas para la generacion de objetos
 class Articulo {
     constructor (producto, precio, stock) {
         this.producto = producto;
@@ -9,21 +9,17 @@ class Articulo {
     }
 }
 
-let baseDatos = [];
+//Declaracion de base de datos
+let base_datos = [];
 
-//Consulta y creacion de localStorage
-if(localStorage.getItem('base_datos_articulos')){
-    baseDatos = JSON.parse(localStorage.getItem('base_datos_articulos'))
-}
-else {
-    localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
-}
+//Consulta y creacion de localStorage con operador termario
+let primer_local = (localStorage.getItem('base_datos_articulos')) ? base_datos = JSON.parse(localStorage.getItem('base_datos_articulos')) : localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
 
-//constantes y llamado a nodos 
+//Declaracion de constantes y llamado a nodos del html
 const boton = document.getElementById('formulario_carga')
 const div_producto = document.getElementById('productos')
 
-//Formulario
+//Accion del formulario
 boton.addEventListener ('submit', (e) => {  
     
     e.preventDefault()      
@@ -34,15 +30,15 @@ boton.addEventListener ('submit', (e) => {
 
     const producto1 = new Articulo (nombre_art, precio_art, stock_art);
 
-    baseDatos.push(producto1)
+    base_datos.push(producto1)
 
-    localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
+    localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
 
     div_producto.innerHTML = " "
 
     formulario_carga.reset()
-
-    baseDatos.forEach((producto,indice) => {
+//Incorporar el producto en el DOM
+    base_datos.forEach((producto,indice) => {
         div_producto.innerHTML +=   `<div class="div_articulo" id="producto${indice}">
                                         <h2>${producto.producto}</h2>
                                         <p>${producto.precio}</p>
@@ -50,15 +46,41 @@ boton.addEventListener ('submit', (e) => {
                                         <input type="button" value="Eliminar" id="eliminar">
                                     </div>`
     })
-
-    baseDatos.forEach((producto, indice) => {
+//Incorporacion de Tostify
+    Toastify({
+        text: "Producto incorporado",
+        duration: 3500,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            border: "2px solid black",
+            background: "rgb(97, 97, 156)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
+//Eliminar el producto elegido
+    base_datos.forEach((producto, indice) => {
             document.getElementById(`producto${indice}`).lastElementChild.addEventListener('click', () => {
-            document.getElementById(`producto${indice}`).remove()
-            baseDatos.splice(indice, 1)
-            localStorage.setItem('base_datos_articulos', JSON.stringify(baseDatos))
-            alert(`${producto.producto} eliminado`)
+                Swal.fire({
+                    title: 'Está seguro de eliminar el producto?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Sí, seguro',
+                    cancelButtonText: 'No, no quiero'
+                }).then((result) => {
+                    if (result.isConfirmed){
+                    document.getElementById(`producto${indice}`).remove()
+                    base_datos.splice(indice, 1)
+                    localStorage.setItem('base_datos_articulos', JSON.stringify(base_datos))
+//incorporacion del Sweet Alert                    
+                    Swal.fire({
+                        icon: 'success',
+                        title: `${producto.producto} eliminado`,                    
+                    })  
+                }          
+            })
         })
     })
 })
-
-
