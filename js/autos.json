@@ -1,0 +1,222 @@
+[{
+  "marca": "Chevrolet",
+  "modelos": [
+    {"modelo": "Silverado", "precio":"9017" },
+    {"modelo": "Malibu", "precio":"15673" },
+    {"modelo": "Corvette", "precio":"14330" },
+    {"modelo": "Cruze", "precio":"6500" },
+    {"modelo": "Silverado 3500", "precio":"17149" }
+]}, {
+  "marca": "Mitsubishi",
+  "modelos": [
+    {"modelo": "Challenger", "precio":"7505" },
+    {"modelo": "Expo", "precio":"11370" },
+    {"modelo": "Raider", "precio":"17595" },
+    {"modelo": "Pajero", "precio": "12749" }
+]}, {
+  "marca": "Peugeot",
+  "modelos": [
+    {"modelo": "208 GT", "precio":"11739" },
+    {"modelo": "308 GTI", "precio":"15370" },
+    {"modelo": "3008", "precio":"17595" },
+    {"modelo": "408", "precio": "8549" }
+]}, {
+  "marca": "Mercedes-Benz",
+  "modelos": [
+    {"modelo": "SLK-CLASS", "precio":"9675" },
+    {"modelo": "SLS-Class", "precio": "7850" },
+    {"modelo": "600SEL", "precio": "14127" },
+    {"modelo": "R-Class", "precio": "12095" },
+    {"modelo": "S-Class", "precio": "6295" }
+]}, {
+  "marca": "Toyota",
+  "modelos": [
+    {"modelo": "T-100", "precio":"9128" },
+    {"modelo": "Avalon", "precio": "7855" },
+    {"modelo": "FJ Cruiser", "precio": "16043" },
+    {"modelo": "Land Cruiser", "precio": "17789" },
+    {"modelo": "Celica",  "precio": "9375" },
+    {"modelo": "MR2", "precio": "16394" },
+    {"modelo": "Corolla", "precio": "8153" }
+]}, {
+  "marca": "BMW",
+  "modelos": [
+    {"modelo": "5 Series", "precio":"12538" },
+    {"modelo": "X6 M", "precio": "4977" },
+    {"modelo": "525", "precio": "14300" },
+    {"modelo": "Z4", "precio": "6713" },
+    {"modelo": "7 Series", "precio": "5455" },
+    {"modelo": "X3", "precio": "6866" }
+]}, {
+  "marca": "Ford",
+  "modelos": [
+    {"modelo": "Focus", "precio":"10509" },
+    {"modelo": "E150", "precio": "15018" },
+    {"modelo": "Thunderbird", "precio": "6104" },
+    {"modelo": "Galaxie", "precio": "10688" },
+    {"modelo": "F350", "precio": "6928" },
+    {"modelo": "Mustang", "precio": "17312" },
+    {"modelo": "Expedition", "precio": "10932" }, 
+    {"modelo": "Fusion", "precio": "8668" }
+]}, {
+  "marca": "Daewoo",
+  "modelos": [
+    {"modelo": "Lanos", "precio":"13949" },
+    {"modelo": "Tacuma", "precio": "5127" },
+    {"modelo": "Compact", "precio": "6578" }
+]}, {
+  "marca": "Subaru",
+  "modelos": [
+    {"modelo": "Loyale", "precio":"5025" },
+    {"modelo": "BRZ", "precio": "16107" },
+    {"modelo": "Impreza", "precio": "19617" }
+]}, {
+  "marca": "Honda",
+  "modelos": [
+    {"modelo": "Accord", "precio":"6421" },
+    {"modelo": "S2000", "precio": "15163" },
+    {"modelo": "Civic SI", "precio": "12376" }
+]}, {
+  "marca": "Fiat",
+  "modelos": [
+    {"modelo": "Cronos", "precio":"7626" },
+    {"modelo": "500", "precio": "9104" }
+]}, {
+  "marca": "Lexus",
+  "modelos": [
+    {"modelo": "GS", "precio":"12665" },
+    {"modelo": "LC", "precio": "9163" },
+    {"modelo": "UX", "precio": "8743" }
+]}, {
+  "marca": "Jeep",
+  "modelos": [
+    {"modelo": "Renegade", "precio":"11665" },
+    {"modelo": "Grand Cherokee", "precio": "12382" }
+]}, {
+  "marca": "Alfa Romeo",
+  "modelos": [
+    {"modelo": "Spider", "precio":"11421" },
+    {"modelo": "Giulia", "precio": "14163" },
+    {"modelo": "Stelvio", "precio": "8743" }
+]}, {
+  "marca": "Hyundai",
+  "modelos": [
+    {"modelo": "Genesis", "precio":"10425" },
+    {"modelo": "Tucson", "precio": "10853" }
+]}, {
+  "marca": "Smart",
+  "modelos": [
+    {"modelo": "Forfour", "precio":"11951" },
+    {"modelo": "Fortwo", "precio": "12500" },
+    {"modelo": "Fortwo Cabrio", "precio": "16307" }
+]}, {
+  "marca": "Dodge",
+  "modelos": [
+    {"modelo": "Grand Caravan", "precio":"12534" },
+    {"modelo": "Viper", "precio": "9597" },
+    {"modelo": "Caravan", "precio": "10775" },
+    {"modelo": "Ram 3500", "precio": "16251" },
+    {"modelo": "Ram Van B250", "precio": "15459" },
+    {"modelo": "Spirit", "precio": "10559" }   
+]}, {
+  "marca": "Suzuki",
+  "modelos": [
+    {"modelo": "SJ", "precio": "15117" },
+    {"modelo": "Grand Vitara", "precio": "9275" }
+]}, {
+  "marca": "GMC",
+  "modelos": [
+    {"modelo": "Vandura 2500", "precio":"8250" },
+    {"modelo": "Savana 1500", "precio": "6987" },
+    {"modelo": "Sierra 1500", "precio": "15853" },
+    {"modelo": "Jimmy", "precio": "6752" }   
+]}, {
+  "marca": "Citroën",
+  "modelos": [
+    {"modelo": "DS-3", "precio": "10433" },
+    {"modelo": "C4", "precio": "8433" }
+
+]}, {
+  "marca": "Bentley",
+  "modelos": [
+    {"modelo": "Brooklands", "precio": "17064" },
+    {"modelo": "Continental", "precio": "12164" },
+    {"modelo": "Mulsanne", "precio": "14234" }
+]}, {
+  "marca": "Audi",
+  "modelos": [
+    {"modelo": "TT", "precio":"12654" },
+    {"modelo": "5000CS", "precio": "5102" },
+    {"modelo": "A7", "precio": "15653" },
+    {"modelo": "RS3", "precio": "12472" }   
+]}, {
+  "marca": "Jaguar",
+  "modelos": [
+    {"modelo": "X-Type", "precio": "12225" },
+    {"modelo": "XK Series", "precio": "14453" }
+]}, {
+  "marca": "Lotus",
+  "modelos": [
+    {"modelo": "Elan", "precio": "17019" },
+    {"modelo": "Elise", "precio": "9654" }
+]}, {
+  "marca": "Kia",
+  "modelos": [
+    {"modelo": "Spectra", "precio": "17842" },
+    {"modelo": "Rio", "precio": "5366" }
+]}, {
+  "marca": "Hummer",
+  "modelos": [
+    {"modelo": "H2", "precio": "12644" },
+    {"modelo": "H3", "precio": "10098" },
+    {"modelo": "H4", "precio": "12098" }
+]}, {
+  "marca": "Mazda",
+  "modelos": [
+    {"modelo": "RX-8", "precio": "10524" },
+    {"modelo": "Mazda3", "precio": "15852" },
+    {"modelo": "Mazda6", "precio": "10818" },
+    {"modelo": "929", "precio": "5207" }
+]}, {
+  "marca": "Acura",
+  "modelos": [
+    {"modelo": "SLX", "precio": "17662" },
+    {"modelo": "TL", "precio": "8117" }
+]}, {
+  "marca": "Volvo",
+  "modelos": [
+    {"modelo": "C70", "precio": "12617" },
+    {"modelo": "S80", "precio": "11804" }
+]}, {
+  "marca": "Nissan",
+  "modelos": [
+    {"modelo": "Altima", "precio": "16539" },
+    {"modelo": "Sentra", "precio": "5804" }
+]}, {
+  "marca": "Volkswagen",
+  "modelos": [
+    {"modelo": "Fox", "precio": "7563" },
+    {"modelo": "Golf GTI", "precio": "10564" },
+    {"modelo": "Gol Trend", "precio": "8514" }
+]}, {
+  "marca": "Mini Cooper",
+  "modelos": [
+    {"modelo": "Cabrio", "precio": "5682" },
+    {"modelo": "Countryman", "precio": "7682" }
+
+]}, {
+  "marca": "Isuzu",
+  "modelos": [
+    {"modelo": "i-Series", "precio": "4765" },
+    {"modelo": "D-Max", "precio": "8054" }
+]}, {
+  "marca": "Renault",
+  "modelos": [
+    {"modelo": "Fluence", "precio": "5072" },
+    {"modelo": "Megane R.S", "precio": "10072" }
+]}, {
+  "marca": "Porsche",
+  "modelos": [
+    {"modelo": "928", "precio": "9070" },
+    {"modelo": "Carrera", "precio": "13042" }
+]}]
